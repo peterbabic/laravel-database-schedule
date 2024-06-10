@@ -65,7 +65,8 @@ return [
         'delete' => 'Delete',
         'history' => 'History',
         'cancel' => 'Cancel',
-        'restore' => 'Restore'
+        'restore' => 'Restore',
+        'run' => 'Run now'
     ],
     'validation' => [
         'cron' => 'The field must be filled in the cron expression format.',

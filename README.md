@@ -1,5 +1,13 @@
 ![Laravel Database Schedule](https://banners.beyondco.de/Laravel%20Database%20Schedule.png?theme=light&packageManager=composer+require&packageName=robersonfaria%2Flaravel-database-schedule&pattern=architect&style=style_1&description=Schedule+your+tasks+through+a+dashboard+and+without+having+to+deploy+the+application.&md=1&showWatermark=1&fontSize=100px&images=calendar&widths=auto&heights=350)
 
+## GRENWAY NOTES
+
+Known limitations of "run now" feature (yellow dot button):
+
+- Always runs only on this server
+- The output appears to NOT being logged anywhere so far
+- Requires pressing "back in history"
+
 # Documentation
 
 This librarian creates a route(default: /schedule) in your application where it is possible to manage which 
@@ -11,6 +19,7 @@ activated, inactivated or deleted via the interface without the need for a new a
 ![Create Schedules](docs/new-schedule2.png)
 
 ![Show History Schedules](docs/show-history1.png)
+
 
 ## Installation
 

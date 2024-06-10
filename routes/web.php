@@ -28,6 +28,8 @@ Route::delete('/{schedule}', 'ScheduleController@destroy')
     ->name(config('database-schedule.route.name', 'database-schedule') . '.destroy');
 Route::get('/{schedule}/edit', 'ScheduleController@edit')
     ->name(config('database-schedule.route.name', 'database-schedule') . '.edit');
+Route::get('/{schedule}/run', 'ScheduleController@run')
+    ->name(config('database-schedule.route.name', 'database-schedule') . '.run');
 
 // @link https://laracasts.com/discuss/channels/laravel/route-model-binding-with-soft-deleted-model
 Route::post('/{thrashed_schedule}/restore', 'ScheduleController@restore')

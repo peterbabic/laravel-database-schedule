@@ -74,6 +74,11 @@
                                     {{ $schedule->deleted_at ? (', ' . trans('schedule::schedule.status.trashed')) : '' }}
                                 </td>
                                 <td class="text-center">
+                                    <a href="{{ action('\RobersonFaria\DatabaseSchedule\Http\Controllers\ScheduleController@run', $schedule) }}"
+                                       class="btn btn-sm btn-warning">
+                                        <i title="{{ trans('schedule::schedule.buttons.run') }}"
+                                           class="bi bi-dot"> </i>
+                                    </a>
                                     <a href="{{ action('\RobersonFaria\DatabaseSchedule\Http\Controllers\ScheduleController@show', $schedule) }}"
                                        class="btn btn-sm btn-info">
                                         <i title="{{ trans('schedule::schedule.buttons.history') }}"
